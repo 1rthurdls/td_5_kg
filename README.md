@@ -428,9 +428,6 @@ Improvements welcome! Areas to extend:
 - More visualizations
 - Deployment pipeline
 
-## 📄 License
-
-Educational use - Free to modify and extend
 
 ---
 
