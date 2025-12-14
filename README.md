@@ -232,7 +232,7 @@ CALL gds.node2vec.write('twitch', {
 - Stratified sampling (preserve language distribution)
 - Metrics: Accuracy, Precision, Recall, F1-Score
 
-## 📊 Results
+##  Results
 
 ### Expected Performance
 
