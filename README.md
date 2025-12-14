@@ -1,8 +1,8 @@
-# 🎮 Twitch Stream Language Prediction with Graph ML
+#  Twitch Stream Language Prediction with Graph ML
 
 A complete lab demonstrating **Graph Machine Learning** for predicting stream languages on Twitch using network structure and Node2Vec embeddings.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Problem Statement](#problem-statement)
 - [Approach](#approach)
@@ -13,9 +13,9 @@ A complete lab demonstrating **Graph Machine Learning** for predicting stream la
 - [Results](#results)
 - [Extensions](#extensions)
 
-## 🎯 Problem Statement
+##  Problem Statement
 
-**Scenario:** You're a Data Scientist at Twitch 🧙
+**Scenario:** You're a Data Scientist at Twitch 
 
 Every day, new streamers join the platform. You need to identify the **language** of new streams, but audio-to-text conversion and language detection are expensive.
 
@@ -38,14 +38,14 @@ Every day, new streamers join the platform. You need to identify the **language*
 - **Edges**: Shared audience (undirected)
 - **Weights**: Count of shared viewers
 
-## 🚀 Approach
+##  Approach
 
 1. **Build Graph**: Create monopartite graph of streams with shared audience
 2. **Generate Embeddings**: Use **Node2Vec** to create vector representations
 3. **Train Classifier**: Use **Random Forest** to predict language from embeddings
 4. **Evaluate**: Analyze performance with confusion matrix and metrics
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -75,7 +75,7 @@ docker-compose logs -f
 2. Open notebook: `twitch_language_prediction.ipynb`
 3. Run all cells sequentially
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 twitch-graphml-lab/
@@ -98,7 +98,7 @@ twitch-graphml-lab/
 └── README.md              # This file
 ```
 
-## 🎓 Usage
+##  Usage
 
 ### Module: `graph.py`
 
@@ -259,7 +259,7 @@ CALL gds.node2vec.write('twitch', {
     ...
 ```
 
-## 🤔 Discussion Points
+##  Discussion Points
 
 ### 1. Confusion Matrix Interpretation
 
@@ -402,35 +402,8 @@ Compare Graph ML approach with:
 - Manual tagging
 - Baseline (most common language)
 
-## 📚 Resources
-
-- [Node2Vec Paper](https://arxiv.org/abs/1607.00653)
-- [Neo4j GDS Documentation](https://neo4j.com/docs/graph-data-science/)
-- [Graph Machine Learning Book](https://www.cs.mcgill.ca/~wlh/grl_book/)
-
-## 🏆 Learning Objectives
-
-After completing this lab, you will understand:
-
-- ✅ How to model real-world problems as graphs
-- ✅ Graph embedding techniques (Node2Vec)
-- ✅ Neo4j Graph Data Science library
-- ✅ End-to-end ML pipeline on graph data
-- ✅ Evaluation metrics for classification
-- ✅ Practical considerations for production ML
-
-## 🤝 Contributing
-
-Improvements welcome! Areas to extend:
-- Additional embedding algorithms
-- Deep learning models (GCN, GAT)
-- Real-time streaming support
-- More visualizations
-- Deployment pipeline
-
-
 ---
 
-**Happy Graph Learning!** 🚀🎮
+**Happy Graph Learning!** 
 
 For questions or issues, check the notebook comments or Neo4j browser at http://localhost:7474
